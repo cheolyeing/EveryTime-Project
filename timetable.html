@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <style>
+      table {
+        width: 600px;
+        height: 400px;
+        align-content: center;
+      }
+      td {
+        width: 100px;
+      }
+      tr {
+        height: 80px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="title">시간표 서비스</h1>
+      <div>
+        <button class="main">메인으로</button>
+      </div>
+      <button class="lecture">강의평가</button>
+      <button class="timeTable">시간표</button>
+      <button class="score">학점예측</button>
+      <button class="logout">로그아웃</button>
+      <div class="service">
+        <h1 class="serviceTitle"></h1>
+        <table>
+          <tbody>
+            <th>분류</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+            <tr>
+              <!-- 1교시 -->
+              <td>1교시</td>
+              <td class="a11"></td>
+              <td class="a12"></td>
+              <td class="a13"></td>
+              <td class="a14"></td>
+              <td class="a15"></td>
+            </tr>
+            <tr>
+              <!-- 2교시 -->
+              <td>2교시</td>
+              <td class="a21"></td>
+              <td class="a22"></td>
+              <td class="a23"></td>
+              <td class="a24"></td>
+              <td class="a25"></td>
+            </tr>
+            <tr>
+              <!-- 3교시 -->
+              <td>3교시</td>
+              <td class="a31"></td>
+              <td class="a32"></td>
+              <td class="a33"></td>
+              <td class="a34"></td>
+              <td class="a35"></td>
+            </tr>
+            <tr>
+              <!-- 4교시 -->
+              <td>4교시</td>
+              <td class="a41"></td>
+              <td class="a42"></td>
+              <td class="a43"></td>
+              <td class="a44"></td>
+              <td class="a45"></td>
+            </tr>
+          </tbody>
+        </table>
+        <br /><br />
+        <form>
+          <h4>수업 추가하기</h4>
+          <select name="day" class="selectDay">
+            <option value="">요일 선택</option>
+            <option value="1">월</option>
+            <option value="2">화</option>
+            <option value="3">수</option>
+            <option value="4">목</option>
+            <option value="5">금</option>
+          </select>
+          <select name="time" class="selectTime">
+            <option value="">교시 선택</option>
+            <option value="1">1교시</option>
+            <option value="2">2교시</option>
+            <option value="3">3교시</option>
+            <option value="4">4교시</option>
+          </select>
+          <input class="inputLecture" type="text" placeholder="수업명" />
+          <input class="inputProfessor" type="text" placeholder="교수님" />
+          <button class="addLecture">추가하기</button>
+        </form>
+      </div>
+    </div>
+    <script src="timetable.js"></script>
+  </body>
+</html>
